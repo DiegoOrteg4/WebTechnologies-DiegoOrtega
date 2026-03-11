@@ -1,0 +1,120 @@
+.encabezado {
+    background-color:rgb(249, 252, 255);
+    color: white;
+    border: 2px solid black;
+    flex-direction: row;
+    padding: 10px;
+    text-align:initial;
+}
+nav {
+    background-color:rgb(202, 216, 230);
+    padding: 25px;
+    text-align:initial;
+}
+
+nav a{ 
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+main {
+    display: grid; 
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px; 
+    max-width: 960px;
+    column-gap: 10px;
+    margin: 0 auto;
+}
+
+.articulos {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr; 
+    gap: 20px ;
+}
+
+article { 
+    background-color: rgb(189, 231, 255);
+    padding: 90px; 
+    text-align: center;
+    gap: 20px;
+
+}
+
+aside { 
+    background-color: rgb(148, 169, 188);
+    padding: 190px;
+}
+
+footer{
+    background-color:rgb(242, 239, 204);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    flex-direction: row;
+    padding: 10px;
+    text-align:center;
+    
+}
+/*
+.articulo1 {
+    display: flex;
+    background-color:bisque;
+    border: 20px seagreen;
+    flex-direction: row;
+    padding: 80px;
+    font-size: 20px;
+    text-align:initial;
+    order: 3;
+
+}
+
+.articulo2 {
+    display: flex;
+    background-color:bisque;
+    border: 20px seagreen;
+    flex-direction: row;
+    padding: 80px;
+    font-size: 20px;
+    text-align:initial;
+    order: 3;
+
+}
+
+.articulo3 {
+    display: flex;
+    background-color:bisque;
+    border: 20px seagreen;
+    flex-direction: row;
+    padding: 80px;
+    font-size: 20px;
+    text-align:initial;
+    order: 3;
+
+}
+
+.articulo4 {
+    display: flex;
+    background-color:bisque;
+    border: 20px seagreen;
+    flex-direction: row;
+    padding: 80px;
+    font-size: 20px;
+    text-align:initial;
+    order: 3;
+
+}
+
+.aside {
+    display: inline-flex; 
+    grid-column: 3;
+    grid-row: 2;
+    grid-template-columns:max-content ;
+    grid-template-rows:max-content; 
+    padding: 90px;
+    flex-direction: row;
+    background-color:rgb(206, 214, 157); 
+}
+*/
