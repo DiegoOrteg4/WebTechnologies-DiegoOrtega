@@ -1,4 +1,11 @@
+
 .encabezado {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: white; 
+    z-index: 1000;
     background-color:rgb(249, 252, 255);
     color: white;
     border: 2px solid black;
@@ -6,10 +13,20 @@
     padding: 10px;
     text-align:initial;
 }
+
+body { 
+    padding-top: 210px;
+}
+
+.imagen{
+    width: 80px;
+    height: 35px;
+}
 nav {
     background-color:rgb(202, 216, 230);
     padding: 25px;
     text-align:initial;
+    border: 1px solid black;
 }
 
 nav a{ 
@@ -19,34 +36,36 @@ nav a{
 
 }
 
-main {
+.container {
     display: grid; 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:2fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px; 
     max-width: 960px;
-    column-gap: 10px;
+    column-gap: 8px;
     margin: 0 auto;
 }
 
-.articulos {
+.articles {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr; 
-    gap: 20px ;
+    grid-template-columns: auto auto;
+    grid-template-rows: fr;
+    gap: 5px ;
 }
 
 article { 
     background-color: rgb(189, 231, 255);
-    padding: 90px; 
+    padding: 120px; 
     text-align: center;
     gap: 20px;
+    border: 2px solid black;
 
 }
 
 aside { 
     background-color: rgb(148, 169, 188);
-    padding: 190px;
+    padding: 40px;
+    border: 2px solid black;
 }
 
 footer{
@@ -56,65 +75,6 @@ footer{
     flex-direction: row;
     padding: 10px;
     text-align:center;
+    margin-top: 30px;
     
 }
-/*
-.articulo1 {
-    display: flex;
-    background-color:bisque;
-    border: 20px seagreen;
-    flex-direction: row;
-    padding: 80px;
-    font-size: 20px;
-    text-align:initial;
-    order: 3;
-
-}
-
-.articulo2 {
-    display: flex;
-    background-color:bisque;
-    border: 20px seagreen;
-    flex-direction: row;
-    padding: 80px;
-    font-size: 20px;
-    text-align:initial;
-    order: 3;
-
-}
-
-.articulo3 {
-    display: flex;
-    background-color:bisque;
-    border: 20px seagreen;
-    flex-direction: row;
-    padding: 80px;
-    font-size: 20px;
-    text-align:initial;
-    order: 3;
-
-}
-
-.articulo4 {
-    display: flex;
-    background-color:bisque;
-    border: 20px seagreen;
-    flex-direction: row;
-    padding: 80px;
-    font-size: 20px;
-    text-align:initial;
-    order: 3;
-
-}
-
-.aside {
-    display: inline-flex; 
-    grid-column: 3;
-    grid-row: 2;
-    grid-template-columns:max-content ;
-    grid-template-rows:max-content; 
-    padding: 90px;
-    flex-direction: row;
-    background-color:rgb(206, 214, 157); 
-}
-*/
