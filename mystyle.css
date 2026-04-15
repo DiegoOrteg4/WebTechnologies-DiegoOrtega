@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* -------- HEADER ----------*/
+
 .encabezado{ /* Sticky menu/ HEADER */ 
     display: flex;
     justify-content: space-between;
@@ -37,4 +39,52 @@ nav a{
     text-decoration: none;
     font-weight: bold;
 
+}
+
+/* -------- MAIN ------- */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.imagen{
+    width: 80px;
+    height: 35px;
+}
+
+main {
+    padding: 15px;
+}
+
+
+.container {
+   display: block;
+   /* display: grid; 
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px; 
+    max-width: 960px;
+    column-gap: 8px;
+    margin: 0 auto;*/
+}
+
+
+.articles {
+    display: block;
+    gap: 5px ;
+}
+
+article { 
+    background-color: rgb(189, 231, 255);
+    padding: 15px; 
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+aside {
+    display: none;
+    background-color: rgb(148, 169, 188);
+    padding: 40px;
+    border: 2px solid black;
 }
