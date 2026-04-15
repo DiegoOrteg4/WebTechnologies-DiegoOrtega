@@ -88,3 +88,14 @@ aside {
     padding: 40px;
     border: 2px solid black;
 }
+
+/* -------- FOOTER ---------*/
+footer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 10px;
+    text-align:center;
+    margin-top: 30px;
+    
+}
