@@ -99,3 +99,20 @@ footer{
     margin-top: 30px;
     
 }
+
+/* -------- DESKTOP LAYOUT ------------
+-----HEADER ----------------------*/
+
+@media (min-width: 768px) {
+
+    .encabezado { 
+        position: fixed; 
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu-icon { 
+        display: none; 
+    }
+}
