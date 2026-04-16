@@ -141,4 +141,9 @@ footer{
         grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
+
+    aside {
+        display: block;
+        padding: 20px;
+    }
 }
