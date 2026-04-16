@@ -115,4 +115,12 @@ footer{
     .menu-icon { 
         display: none; 
     }
+
+    nav{
+        display: block;
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        background: white;
+    }
 }
