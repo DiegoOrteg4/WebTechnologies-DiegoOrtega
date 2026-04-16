@@ -124,7 +124,7 @@ footer{
         background: white;
     }
 
-        main {
+    main {
         margin-top: 140px;
     }
 
@@ -145,5 +145,9 @@ footer{
     aside {
         display: block;
         padding: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
     }
 }
