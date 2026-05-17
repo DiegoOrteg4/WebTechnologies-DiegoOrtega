@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR NAME | Web Tech | Cert 4 Prog</title>
+    <link rel="stylesheet" href="mystyle.css">       
+</head>
+<body>
+<header>
+    <div class= "encabezado">
+        <h1 style="color:rgb(12, 12, 12);text-align:center;">Certificate IV in IT (Programming) Web Tech Portfolio</h1>
+        <img src="https://placehold.co/64?text=logo" alt="Logo">
+    </div>
+
+        <nav>
+            <a href=".">Home</a></li> </button>
+            <a href="phase-1">Phase 1</a></li> </button>
+            <a href="phase-2">Phase 2</a></li> </button>
+            <a href="phase-3">Phase 3</a></li> </button>
+        </nav>
+</header>
+
+<main>
+<div class="articulos"> 
+    <section class="articulo">
+        <article>Article 1<br><p>Paragraph 1</p></article>
+        <article>Article 2<br><p>Paragraph 2</p></article>
+        <article>Article 3<br><p>Paragraph 3</p></article>
+        <article>Article 4<br><p>Paragraph 4</p></article>
+    </section>
+</div>    
+
+<div clas="aside">
+    <aside> ASIDES
+
+        <section>
+            <p>Section 1</p>
+        </section>
+        
+        <section>
+            <p>Section 2</p>    
+        </section>
+
+        <section>
+            <p>Section 3 </p>
+        </section>
+    </aside>
+</div>
+</main>
+<footer>
+    <header>
+        <h2>Certificate IV in IT (Programming)</h2>
+        <p>Web Technologies Portfolio as implemented by Diego Ortega</p>
+    </header>
+        <section>
+            <a href="phase-1">Phase 1</a> 
+            <a href="phase-2">Phase 2</a> 
+            <a href="phase-3">Phase 3</a>
+        </section>
+    <section>
+        <img src="https://placehold.co/64?text=logo" alt="Logo">
+        <p>© Copyright 2026 Adrian Gould and Diego Ortega. All rights reserved.</p>
+    </section>
+    <section>
+        <a href="#">North Metro TAFE</a>
+        <a href="#">ScreenCraft Dev Sites</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Copyright</a> 
+    </section>
+</footer>
+</body>
+</html> 
