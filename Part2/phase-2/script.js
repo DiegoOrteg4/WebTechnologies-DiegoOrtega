@@ -100,6 +100,7 @@ async function fetchData() {
                 </div>
             `;
     }
+    // SHOWING API DELIVERED ERROR MESSAGES
   } catch (error) {
     output.innerHTML = `
             <p style="color:red;">
