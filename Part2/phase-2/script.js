@@ -1,4 +1,6 @@
 /* ARTICLE 3 API FORM*/
+
+// checkboxes
 const radios = document.querySelectorAll('input[name="api"]');
 const input = document.getElementById("user_input");
 
@@ -17,6 +19,7 @@ radios.forEach((radio) => {
 
 // APIS FUNCTIONALITY --------------------------------------------------
 
+// EVENT LISTENER --------
 async function fetchData() {
   const selectedAPI = document.querySelector('input[name="api"]:checked');
 
@@ -30,6 +33,8 @@ async function fetchData() {
     output.innerHTML = "Select an API";
     return;
   }
+
+  // -----------------------------------------------------------------
 
   let apiURL = "";
 
