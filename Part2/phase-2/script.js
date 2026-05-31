@@ -34,8 +34,6 @@ async function fetchData() {
     return;
   }
 
-  // -----------------------------------------------------------------
-
   let apiURL = "";
 
   if (selectedAPI.value === "quote") {
@@ -43,6 +41,8 @@ async function fetchData() {
   } else if (selectedAPI.value === "password") {
     const length = parseInt(userInput.value);
 
+    // -----------------------------------------------------------------
+    // HANDLING USER INPUT ERRORS
     if (!userInput.value || isNaN(length)) {
       output.innerHTML = "Please enter a password length";
       return;
