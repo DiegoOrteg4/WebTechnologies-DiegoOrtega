@@ -66,6 +66,8 @@ async function fetchData() {
       },
     });
 
+    // HANDLING API CALL ERRORS
+
     if (!response.ok) {
       throw new Error(`HTTP Error: ${response.status}`);
     }
