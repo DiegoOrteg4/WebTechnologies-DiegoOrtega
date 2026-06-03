@@ -63,44 +63,48 @@
         <form>
           <h2>Select one of the following APIs</h2>
 
-          <label>
-            <input type="radio" name="api" value="quote" />
-            Quote Of The Day
-          </label>
+          <fieldset>
+            <legend>Available APIs</legend>
 
-          <label>
-            <input type="radio" name="api" value="password" />
-            Password Generator
-          </label>
+            <label>
+              <input type="checkbox" name="api" value="quote" />
+              Quote Of The Day
+            </label>
 
-          <br /><br />
+            <label>
+              <input type="checkbox" name="api" value="password" />
+              Password Generator
+            </label>
+          </fieldset>
 
-          <div class="password_length">
+          <fieldset class="password_length">
+
             <input
               type="text"
               id="user_input"
               name="user_input"
               placeholder="Introduce Password Length..."
             />
-          </div>
+          </fieldset>
 
-          <br />
-
-          <button class="get_button" type="button" onclick="fetchData()">
+          <button class="get_button" type="button" id="fetchButton">
             Get
           </button>
+          <br/>
+          <br/> 
 
-          <div id="output">
-            <br />
+          <output id="output">
             Select an API.
-          </div>
+          </output>
         </form>
 
-        <img
-          class="imagen3"
-          src="../assets/img/api_selection_meme.png"
-          alt="api selection meme"
-        />
+        <figure>
+          <img
+            class="imagen3"
+            src="../assets/img/api_selection_meme.png"
+            alt="API selection meme"
+          />
+        </figure>
       </article>
 
       <article class="article4">
@@ -141,6 +145,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
