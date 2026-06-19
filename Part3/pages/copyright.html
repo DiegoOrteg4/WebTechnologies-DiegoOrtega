@@ -6,51 +6,119 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Copyright | Diego Ortega | Web Tech | Cert 4 Prog</title>
-    
+    <link rel="stylesheet" href="../assets/css/site.css"   >
 </head>
-<body>
-<header>
-    <div>
-    <h1>Certificate IV in IT (Programming) Web Tech Portfolio</h1>
-        <img
-          class="h-20 w-20 rounded-full object-cover"
-          src="../assets/img/logo.jpg"
-          alt="escudo_nacional_mexicano"
-        />
-    </div>
-    <nav>
-        <ul>
-            <li><a href=".">Home</a></li>
-            <li><a href="phase-1">Phase 1</a></li>
-            <li><a href="phase-2">Phase 2</a></li>
-            <li><a href="phase-3">Phase 3</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <article>
-        <header>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
 
+<header class="bg-slate-900 text-white shadow-lg">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6  p-6 ">
+        <div class="flex items-center gap-4">
+            <img
+                class="h-20 w-20 rounded-full object-cover border-2 border-white"
+                src="../assets/img/logo.jpg"
+                alt="escudo_nacional_mexicano"
+            />
 
-        </header>
-        <div>
-<!-- Add links to any resources used in this assessment, including images, tutorials, TailwindCSS, and so on -->
+            <div>
+                <h1 class="text-2xl font-bold">
+                    Certificate IV in IT (Programming)
+                </h1>
+                <p class="text-slate-300">
+                    Web Technologies Portfolio
+                </p>
+            </div>
         </div>
+
+        <nav>
+            <ul class="flex gap-6 mt-4 md:mt-0">
+                <li><a class="hover:text-sky-300" href="../index.html">Home</a></li>
+                <li><a class="hover:text-sky-300" href="../phase-1/index.html">Phase 1</a></li>
+                <li><a class="hover:text-sky-300" href="../phase-2/index.html">Phase 2</a></li>
+                <li><a class="hover:text-sky-300" href="../phase-3/index.html">Phase 3</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="flex-grow max-w-5xl mx-auto p- w-full">
+
+    <article class="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
+
+        <header class="mb-6 border-b pb-4">
+            <h2 class="text-3xl font-bold text-slate-900">
+                Copyright & References
+            </h2>
+
+            <p class="text-slate-600 mt-2">
+                The following resources were used during the development of this assessment.
+            </p>
+        </header>
+
+        <section>
+            <ul class="space-y-3 list-disc pl-6">
+
+                <li>
+                    <a class="text-blue-600 hover:underline"
+                       href="https://v3.tailwindcss.com/docs/installation">
+                        Tailwind CSS Installation Guide
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-blue-600 hover:underline"
+                       href="https://www.w3schools.com/html/html_form_elements.asp">
+                        W3Schools - HTML Form Elements
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-blue-600 hover:underline"
+                       href="https://www.w3schools.com/tags/tag_fieldset.asp">
+                        W3Schools - Fieldset Tag
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-blue-600 hover:underline"
+                       href="https://www.geeksforgeeks.org/javascript/javascript-fetch-method/">
+                        GeeksForGeeks - JavaScript Fetch Method
+                    </a>
+                </li>
+
+                <li>
+                    <a class="text-blue-600 hover:underline"
+                       href="https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT">
+                        JavaScript Tutorial Playlist
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+
     </article>
+
 </main>
-<footer>
-    <section>
-        <img src="https://placehold.co/64?text=logo" alt="Logo">
-        <p>© Copyright 2023 Adrian Gould and Diego Ortega. All rights reserved.</p>
-    </section>
-    <section>
-        <ul>
-            <li><a href="#">North Metro TAFE</a></li>
-            <li><a href="#">ScreenCraft Dev Sites</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Copyright</a></li>
-        </ul>
-    </section>
+
+<footer class="bg-slate-900 text-slate-300 mt-8">
+    <div class="max-w-6xl mx-auto p-6 grid gap-6 md:grid-cols-2 items-center">
+
+        <section class="flex items-center gap-4">
+            <p>
+                © Copyright 2026 Adrian Gould and Diego Ortega.
+                All rights reserved.
+            </p>
+        </section>
+
+        <nav>
+            <ul class="flex flex-wrap justify-center md:justify-end gap-4">
+                <li class="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:shadow-md"><a class="hover:text-sky-300" href="https://www.northmetrotafe.wa.edu.au/">North Metro TAFE</a></li>
+                <li class="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:shadow-md"><a class="hover:text-sky-300" href="https://dev.screencraft.net.au/">ScreenCraft</a></li>
+                <li class="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:shadow-md"><a class="hover:text-sky-300" href="../index.html">Home</a></li>
+                <li class="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:shadow-md"><a class="hover:text-sky-300" href="#">Copyright</a></li>
+            </ul>
+        </nav>
+
+    </div>
 </footer>
+
 </body>
-</html>
