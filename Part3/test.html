@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API to HTML Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .user { border: 1px solid #ccc; padding: 10px; margin: 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Random Users</h1>
+    <div id="output">Loading...</div>
+
+    <script>
+        // API endpoint (public API for demonstration)
+        const apiURL = "https://randomuser.me/api/?results=1";
+
+        // Function to fetch and display data
+        async function fetchAndDisplay() {
+            try {
+                const response = await fetch(apiURL);
+
+                // Validate response
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // Build HTML output
+                const outputDiv = document.getElementById("output");
+                outputDiv.innerHTML = ""; // Clear loading text
+
+                data.results.forEach(user => {
+                    const userDiv = document.createElement("div");
+                    userDiv.className = "user";
+                    userDiv.innerHTML = `
+                        <img src="${user.picture.medium}" alt="User Picture">
+                        <p><strong>${user.name.first} ${user.name.last}</strong></p>
+                        <p>Email: ${user.email}</p>
+                        <p>Location: ${user.location.city}, ${user.location.country}</p>
+                    `;
+                    outputDiv.appendChild(userDiv);
+                });
+
+            } catch (error) {
+                document.getElementById("output").innerHTML = 
+                    `<p style="color:red;">Error: ${error.message}</p>`;
+            }
+        }
+
+        // Call the function on page load
+        fetchAndDisplay();
+    </script>
+</body>
+</html>
